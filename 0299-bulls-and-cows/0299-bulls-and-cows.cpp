@@ -9,8 +9,8 @@ public:
             if(secret[i] == guess[i]) {
                 bulls++;
             } else {
-                sVec[secret[i] - '0']++;
-                gVec[guess[i] - '0']++;
+                sVec[secret[i] - '0'] += 1;
+                gVec[guess[i] - '0'] += 1;
             }
         }
         
